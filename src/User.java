@@ -1,10 +1,11 @@
 
 
-class User {
+public class User {
 
     private String FullName, Addres, Contact, Email, Password;
     private int UserID;
     private Double Rateing;
+    
 
 
     public User (String newFullName, String newAddres, String newContact, String newEmail,  String newPassword, int newUserID){
