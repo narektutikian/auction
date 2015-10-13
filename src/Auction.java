@@ -1,3 +1,4 @@
+/*awesome*/
 import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.sun.org.apache.xpath.internal.operations.Bool;
 
