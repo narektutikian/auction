@@ -17,12 +17,15 @@ public class ListofUsers {
         return temp;
     }
 
-    public int addUser(String newFullName, String newAddres, String newContact, String newEmail,  String newPassword){
+    public int addUser(String newFullName, String newAddress, String newContact, String newEmail,  String newPassword){
         int userID = UserIDs;
-        User newUser = new User (newFullName, newAddres, newContact, newEmail,  newPassword, userID);
+        User newUser = new User (newFullName, newAddress, newContact, newEmail,  newPassword, userID);
                 UserIDs++;
         users.add(newUser);
         return userID;
     }
 
+    public void removeUser(User user){
+        users.remove(user);
+    }
 }
