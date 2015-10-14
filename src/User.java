@@ -2,24 +2,26 @@
 
 public class User {
 
-    private String FullName, Addres, Contact, Email, Password;
+    private String FullName, Address, Contact, Email, Password;
     private int UserID;
-    private Double Rateing;
+    private double Rating;
 
 
-
-    public User (String newFullName, String newAddres, String newContact, String newEmail,  String newPassword, int newUserID){
+    public User (String newFullName, String newAddress, String newContact, String newEmail,  String newPassword, int newUserID){
         FullName = newFullName;
-        Addres = newAddres;
+        Address = newAddress;
         Contact = newContact;
         Email = newEmail;
         Password = newPassword;
-        Rateing = .0;
+        Rating = .0;
         UserID = newUserID;
     }
 
     public int getUserID(){
         return UserID;
+    }
+    public double getRating(){
+        return Rating;
     }
 
     public boolean Bid(Double newBid, Auction auction){

@@ -1,4 +1,6 @@
+import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.UUID;
 
 /**
  * Created by King on 9/26/2015.
@@ -8,9 +10,9 @@ public class Bid {
     private String AuctionID;
     private int UserID;
     private Double BidPrice;
-    private GregorianCalendar BidDate = new GregorianCalendar();
+    private Date BidDate = new Date();
 
-    public Bid(String newAuctionID, int newUserID, Double newBidPrice) {
+    public Bid(UUID newAuctionID, int newUserID, Double newBidPrice) {
     }
 
     public void bidding() {
